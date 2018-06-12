@@ -21,10 +21,39 @@ boton.addEventListener("click", () =>{
     return false;
   }
 
+  function contar() {
+    const max = "140";
+    let cadena = document.getElementById("comment").value;
+    let longitud = cadena.length;
+   
+      if(longitud <= max) {
+           document.getElementById("contador").value = max-longitud;
+      } else {
+           document.getElementById("textArea").value = cadena.substr(0, max);
+      }
+      document.getElementById("comment").innerHTML = cadena.length;
+    }
+
+/*  
+  let message = document.getElementById("comment").value;
+  if (message.length> 140){
+    deshabilitar boton
+  }
+  if (message.length>120){
+    counter color rojo  && counter en numeros negativos
+  }
+  if (message.length> 130){
+    counter color blue
+  };
+
+  if (message.length)
+   addEventListener("keypress")
+*/
+/*
   characterN = document.getElementsByTagName("txt").length;
   console.log(characterN);
  hacer que 140 , usuario funcion add event tecla apregta una tecla, descuemnta
-
+*/
 
 
 
